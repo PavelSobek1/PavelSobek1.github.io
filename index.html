@@ -2,7 +2,7 @@
 
 <head>
     <style>
-         h1 {
+        h1 {
             background:#606060;
             text-align: centeleft;
             color:#dcdcdc;
@@ -18,12 +18,18 @@
             padding: 14px 28px
             
         }
-        .X {
+        .post {
             background:white;
-            width: 24cm;
-            height: 10cm;
+            width: 300px;
+        }
 
-                }
+        .title {
+            color:blue;
+        }
+
+        .content {
+            color:grey;
+        }
         .NewPosts {
             width: 500px;
             height: 200px;
@@ -40,42 +46,43 @@
         <input type="text" size="80 %">
         <h3>Content</h3>
 
-        <textarea - class="NewPost">
-    
+        <textarea class="NewPost">
+
             </textarea>
-            <br>
-        <button>Sumbit </button > <br>
+        <br>
+        <button>Submit </button> <br>
     </div>
     <div>
-            <h2>Posts</h2>
-    </div>
-    
-    <div id="posts">
-        
+        <h2>Posts</h2>
     </div>
 
-    <img src="http://img3.auto.cz/news/img/art/2018-38/620_5ba5dcff78f93.jpg">
+    <div id="posts">
+
+    </div>
+    <div>
+        <img src="http://img3.auto.cz/news/img/art/2018-38/620_5ba5dcff78f93.jpg">
+    </div>
 
 
 
     <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
     <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyDZR4CNR_JNaZrXD2GdHFhgZPJyhFU3dlc",
-        authDomain: "pavel-2cb86.firebaseapp.com",
-        databaseURL: "https://pavel-2cb86.firebaseio.com",
-        projectId: "pavel-2cb86",
-        storageBucket: "",
-        messagingSenderId: "859759208525"
-      };
-      firebase.initializeApp(config);
-      fb = firebase.database();
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDZR4CNR_JNaZrXD2GdHFhgZPJyhFU3dlc",
+            authDomain: "pavel-2cb86.firebaseapp.com",
+            databaseURL: "https://pavel-2cb86.firebaseio.com",
+            projectId: "pavel-2cb86",
+            storageBucket: "",
+            messagingSenderId: "859759208525"
+        };
+        firebase.initializeApp(config);
+        fb = firebase.database();
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="blog.js"></script>
-    
+
 </body>
 
 </html>
